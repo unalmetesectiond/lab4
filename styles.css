@@ -1,0 +1,102 @@
+body {
+    background-color: #D8A7CA;
+}
+
+body{
+    color: #000000
+}
+
+.flex-container {
+  display: flex;
+  background-color: #D8A7CA;
+}
+
+.flex-container > div {
+  background-color: #C7B8EA;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+}
+
+.flex-container > div:hover {
+    background-color: #4EFFEF;
+  }
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #C7B8EA;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #4EFFEF;
+  }
+  li a:active {
+    background-color: #73A6AD;
+  }
+
+  .animation {
+    width: 50px;
+    height: 50px;
+    background: #9B97B2;
+    position: relative;
+    animation: mymove 5s infinite;
+    font-size: 40px;
+  }
+
+  @keyframes mymove {
+    0% {top: 200px; background: #4EFFEF; width: 100px;}
+    100%   {top: 0px; background: #9B97B2; width: 300px;}
+  }
+
+  input[type="text"] {
+    width: 100px;
+    -webkit-transition: width .35s ease-in-out;
+    transition: width .35s ease-in-out;
+  }
+  input[type="text"]:focus {
+    width: 250px;
+  }
+
+  .twerk {
+    position: absolute;
+    top: 280px;
+    right: 200px;
+    animation: mytwerk 5s;
+    width: 700px; 
+    height: 400px;
+
+  }
+
+  @keyframes mytwerk {
+    0% {top: 0px; right: 0px; width: 10px; height: 10px;}
+    100%   {top: 280px; right: 200px;}
+  }
+
+  .bg {
+position: absolute;
+top: 0px;
+right: 0px;
+width: 1100px;
+height: 290px;
+
+  }
+
+
+
+  
+  
